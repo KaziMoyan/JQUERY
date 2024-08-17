@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box {
+            background: lightgreen;
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #second{
+            background: rgb(146, 24, 85);
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <p>Filterring Method</p>
+
+    <div id="box">
+        <h2>First</h2>
+        <p>ednw<b> rfrkfprof f r kfkf</b>ck dc,ldcdc clclp[wkokl;mw</p>
+    </div>
+
+    <br>
+   <ul>
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Banna</li>
+   
+   </ul>
+   <br>
+
+  
+    <p class="test">ednw<span class="test">djrf rfkrf rf r r4  k ckr</span> ck dc,ldcdc clclp[wkokl;mw</p>
+   
+
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+         //$('p').has('.test').css('background','gold');
+         $('p').click(function(){
+
+        
+       if($('this').parent().is('div')){
+    $(this).css('background','gold');
+       }
+       });
+        });
+    </script>
+</body>
+</html>

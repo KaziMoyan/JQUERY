@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box  {
+            background: lightgreen;
+            padding: 18px;
+            border: 1px solid #000;
+        }
+        #box2  {
+            background: rgb(13, 5, 222);
+            padding: 10px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>fade</h1>
+
+    <div id="box" class="test">
+        <h2 class="test">Test Box</h2>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+    </div>
+
+    <br>
+    <button id="fadeout">fadeOut</button>
+    <button id="fadeIn">FadeIn</button>
+    <button id="fadetoggle">fade Toggle</button>
+    <button id="fadeto">fade To</button>
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#fadeout').click(function() {
+                $('#box').fadeOut(1000,function(){
+                    console.log("now its hiden");
+                });             
+            });
+            $('#fadeIn').click(function() {
+                $('#box').fadeIn("fast");            
+            });
+            $('#fadetoggle').click(function() {
+                $('#box').fadeToggle(1000,function(){
+                    console.log("now its hiden");
+                });             
+            });
+            $('#fadeto').click(function() {
+                $('#box').fadeTo(1000,0.5);
+                            
+            });
+        });
+    </script>
+</body>
+</html>
+

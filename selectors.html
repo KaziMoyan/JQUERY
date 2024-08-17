@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn jQuery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Yahoo Baba: jQuery Syntax</h1>
+    <div id="test1">
+        <h2>Test Box 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectet</p>
+    </div>
+    <div id="test2">
+        <h2>Test Box 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectet</p>
+    </div>
+
+    <!-- Fruit list added here -->
+    <div id="list">
+        <h2>Fruit List</h2>
+        <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>Date</li>
+            <li>Grape</li>
+            <li>Orange</li>
+            <li class="test">Banana</li>
+            <li>Grapes</li>
+            <li class="test">Apple</li>
+            <li>Guava</li>
+        </ul>
+    </div>
+
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+    <script>
+        $(document).ready(function(){
+            //$("#list").css("color", "red");
+
+            //$(".test ").css("border", "2px solid red");
+
+            $("li:last-child").css("color", "red");
+
+            $("ul li:gt(2)").css("color", "red");
+        });
+    </script>
+
+</body>
+</html>

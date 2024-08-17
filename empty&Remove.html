@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box {
+            background: pink;
+            padding: 18px;
+            border: 1px solid #000;
+        }
+     
+    </style>
+</head>
+<body>
+    <h1>Empty and After Remove</h1>
+
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+    </div>
+    <br>
+    <button id="emptyBtn">Empty</button>
+    <button id="removeBtn">Remove</button>
+  
+
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+        $('#emptyBtn').click(function(){
+            $('#box h2').empty();
+
+        });
+        $('#removeBtn').click(function(){
+            $('#box h2').remove();
+
+        });
+    });
+    </script>
+</body>
+</html>

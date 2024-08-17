@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box {
+            background: lightgreen;
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #outer {
+            background: rgb(53, 49, 125);
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #inner {
+            background: rgb(217, 37, 220);
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #new-box {
+            background: lightblue;
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stop</h1>
+
+    <div id="box" class="">
+        <h2>Main outer</h2>
+        <div id="outer" style="position:relative;">
+            <h2>Outer</h2>
+            <div id="inner">
+                <h2>Inner</h2>
+                <div>A</div>
+                <div>B</div>
+                <div class="child-c">C</div>
+                <div>D</div>
+                <div class="test">E</div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.child-c').nextUntil('.test').css('background','red');
+        });
+    </script>
+</body>
+</html>

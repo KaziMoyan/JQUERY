@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box  {
+          background:lightgreen ;
+            padding: 18px;
+            border: 1px solid #000;
+        }
+        #test{
+            background: pink;
+            padding: 05px;
+        }
+        #box2  {
+          background:rgb(13, 5, 222) ;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>WrapAll & wrapInner Method</h1>
+
+
+    <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+    <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+   
+    <br>
+   <button id="wrapallBtn">Wrapall</button>
+   
+   <button id="wrapinnerBtn">wrapinner</button>
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('#wrapallBtn').click(function(){
+            $('p').wrapAll('<div id="test"></div>');
+        });
+ // Add handler for wrapInnerBtn
+ $('#wrapinnerBtn').click(function(){
+            $('p').wrapInner('<div id="box2"></div>');
+        });
+      });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box  {
+          background:lightgreen ;
+            padding: 18px;
+            border: 1px solid #000;
+        }
+        #box2  {
+          background:rgb(13, 5, 222) ;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Wrap & Unwrap Method</h1>
+
+  
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+    </div>
+    
+   
+    
+    <br>
+   <button id="widthBtn">Width</button>
+   
+   <button id="heightBtn">height</button>
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+      $('#widthBtn').click(function(){
+        console.clear;
+        
+        console.log("width:"+$('#box').width());
+        console.log("Innerwidth:"+$('#box').innerWidth());
+        console.log("Outerwidth:"+$('#box').outerWidth());
+        console.log("Outerwidth(true):"+$('#box').outerWidth(true));
+  
+      });
+
+      $('#heightBtn').click(function(){
+        console.clear;
+        
+        console.log("Height:"+$('#box').height());
+        console.log("InnerHeight:"+$('#box').innerHeight());
+        console.log("OuterHeight:"+$('#box').outerHeight());
+        console.log("OuterHeight(true):"+$('#box').outerHeight(true));
+  
+      });
+
+
+      });
+    </script>
+</body>
+</html>
+

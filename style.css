@@ -1,0 +1,18 @@
+
+  /* Style for both test1 and test2 */
+  #test1{
+    border: 7px solid #fffb19; /* Green border */
+    padding: 5px; /* Space inside the border */
+    margin: 20px; /* Space outside the border */
+    background-color: #0c67a7; /* Light grey background */
+    border-radius: 18px; /* Rounded corners */
+}
+#test2{
+    border: 2px solid #ad4829; /* Green border */
+    padding: 5px; /* Space inside the border */
+    margin: 10px; /* Space outside the border */
+    background-color: #d6aa0d; /* Light grey background */
+    border-radius: 13px; /* Rounded corners */
+}
+
+

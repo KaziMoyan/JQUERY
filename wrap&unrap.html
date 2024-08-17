@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box  {
+          background:lightgreen ;
+            padding: 18px;
+            border: 1px solid #000;
+        }
+        #box2  {
+          background:rgb(13, 5, 222) ;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Wrap & Unwrap Method</h1>
+
+  
+    <div id="box">
+        <h2>Test Box</h2>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+        <br>
+        <p>dc k ccmc kc ck c edpdlke[d olc dc olcd cdlc] <span>d jciojeoicj cdjkec</span></p>
+    </div>
+    
+   
+    
+    <br>
+   <button id="wrapBtn">Wrap</button>
+   
+   <button id="unwrapBtn">Unwrap</button>
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+    
+    <script>
+      $(document).ready(function(){
+        $('#wrapBtn').click(function(){
+          $('#box p').wrap('<h2></h2>');
+       
+        });
+        $('#unwrapBtn').click(function(){
+          $('#box p').unwrap();
+       
+        });
+
+      });
+    </script>
+</body>
+</html>
+

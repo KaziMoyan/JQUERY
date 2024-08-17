@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+
+        #box {
+            background: lightgreen;
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        #second{
+            background: rgb(146, 24, 85);
+            padding: 18px;
+            border: 1px solid #000;
+            position: relative;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <p>Filterring Method</p>
+
+    <div id="box">
+        <h2>First</h2>
+        <p>ednw ck dc,ldcdc clclp[wkokl;mw</p>
+    </div>
+
+    <br>
+   <ul>
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Banna</li>
+   
+   </ul>
+   <br>
+
+   <div id="second">
+    <h2>Second</h2>
+    <p class="test">ednw ck dc,ldcdc clclp[wkokl;mw</p>
+   </div>
+
+    <!-- Include jQuery -->
+    <script src="jquery.js.js"></script>
+
+    <script>
+        $(document).ready(function() {
+          $('ul li').slice(0,1).css('background','gold');
+        });
+    </script>
+</body>
+</html>
